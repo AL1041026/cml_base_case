@@ -6,8 +6,8 @@ import os
 import numpy as np
 
 # Read in data
-X_train = np.genfromtxt("data/train_features.csv")
-y_train = np.genfromtxt("data/train_labels.csv")
+X_train = np.genfromtxt("data/train_features.csv", max_rows=100)
+y_train = np.genfromtxt("data/train_labels.csv", max_rows=100)
 X_test = np.genfromtxt("data/test_features.csv")
 y_test = np.genfromtxt("data/test_labels.csv")
 
